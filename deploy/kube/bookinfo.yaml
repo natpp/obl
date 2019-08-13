@@ -11,6 +11,7 @@
 #   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
+# Modificado por Natali por curso DevOps
 
 ##################################################################################################
 # Details service
@@ -56,7 +57,7 @@ spec:
       serviceAccountName: bookinfo-details
       containers:
       - name: details
-        image: cursocgn.azurecr.io/details-<NombreEquipo>:v1
+        image: cursocgn.azurecr.io/details-nat:v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -105,7 +106,7 @@ spec:
       serviceAccountName: bookinfo-ratings
       containers:
       - name: ratings
-        image: cursocgn.azurecr.io/ratings-<NombreEquipo>:v1
+        image: cursocgn.azurecr.io/ratings-nat:v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -154,7 +155,7 @@ spec:
       serviceAccountName: bookinfo-reviews
       containers:
       - name: reviews
-        image: cursocgn.azurecr.io/reviews-<NombreEquipo>:v1
+        image: cursocgn.azurecr.io/reviews-nat:v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -204,7 +205,7 @@ spec:
       serviceAccountName: bookinfo-productpage
       containers:
       - name: productpage
-        image: cursocgn.azurecr.io/productpage-<NombreEquipo>:v1
+        image: cursocgn.azurecr.io/productpage-nat:v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
